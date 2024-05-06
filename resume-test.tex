@@ -1,49 +1,216 @@
-\documentclass[letter,10pt]{article}
-\usepackage[utf8]{inputenc}
+\documentclass[doublesided, paper=a4, fontsize=10.5pt]{my-resume}
 
-%====================
-% File:         resume.tex
-% Editor:       https://github.com/TimmyChan 
-%               https://www.linkedin.com/in/timmy-l-chan/
-% Last Updated: Jan 7th, 2022
-% Notes:        All formatting is done in TLCresume.sty
-%               No need to touch that file. 
-%               All actual content is in the sections/ folder.
-%====================
+% set geometry
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{3cm}
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
 
-\usepackage{TLCresume}
+% FONTS
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
 
-%====================
-% CONTACT INFORMATION
-%====================
-\def\name{Justin Napolitano} % Name Here
-\def\phone{(832)299-0372}
-\def\city{Houston, Texas}
-\def\email{justin@jnapolitano.io}
-\def\LinkedIn{justin-napolitano} % linkedin.com/in/______
-\def\github{justin-napolitano} % github username
-\def\role{Data Analyst / Data Architect / Developer} % JOB TITLE
-\def\web{\href{https://jnapolitano.io}{jnapolitano.io}}
+% COLORS
+\colorlet{highlightbarcolor}{white}
+\colorlet{headerbarcolor}{white}
+\colorlet{headerfontcolor}{black}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+\colorlet{link-color}{black}
 
-\input{_header}
+% set document
 \begin{document}
-\input{sections/objective}
 
-\section{Experience}
-\input{sections/experience}
+\name{Justin Napolitano}
+\tagline{Data strategist specializing in the design and implementation of cloud based analytics workflows. Eager to tackle new challenges and engineer innovative solutions.}
+\photo[round]{head_shot.jpeg}{\dimexpr 4cm-\marginbottom}
+
+\makeheader
+
+\highlightbar{
+    \section{Contact}
+    \email{personal.jnapolitano@gmail.com}
+    \phone{+1-832-446-8685}
+    \location{Houston, Texas}
+    \github{justin-napolitano}{https://github.com/justin-napolitano}
+    \linkedin{justin-napolitano}{https://www.linkedin.com/in/justin-napolitano}
+    
+    \section{Education}
+    \subsection{BA, Political Science \hfill Aug 2018}
+    \subtext{University of Central Florida \hfill Orlando, Florida}
+    
 
 
-% make a newpage wherever it is a clean break
-% \newpage
+    % \section{Digital Strategy Expertise}
+    %     \tag{SEO}
+    %     \tag{CDP Development}
+    %     \tag{Web Traffic}
+    %     \tag{Customer Segmentation}
+    %     \tag{Ecommerce}
+    %     \tag{Targeted Advertising}
+    %     \tag{Customer Journeys}
 
-\section{Skills}
-\input{sections/skills_test}
+    % \section{Analytic Platform Proficiency}
+    %     \tag{Google Analytics}
+    %     \tag{Google Search Console}
+    %     \tag{Semrush}
+    %     \tag{Zuora}
+    %     \tag{Piano}
+    %     \tag{Swoogo}
+    %     \tag{Comscore}
+    %     \tag{Shareablee}
 
-\section{Projects}
-\input{sections/projects}
+    \section{Technical Proficiency}
 
-\section{Education}
-\input{sections/education}
+    \vspace{0.5em}
+    \skillsection{Data Platforms}
+        \skill{BigQuery}{5}
+        \skill{Treasure Data CDP}{3}
+        \skill{SnowFlake}{3}
+        % \skill{Neo4j}{3}
 
+    \vspace{0.5em}
+    \skillsection{Cloud Providers}
+        \skill{Azure}{3}
+        \skill{GCP}{3}
+        \skill{AWS}{3}
+
+
+    \vspace{0.5em}
+    \skillsection{Analytical Tools}
+        \skill{SQL}{5}
+        \skill{Python}{4}
+        % \skill{Pandas}{4}
+        % \skill{PySpark}{3}
+        \skill{SAS}{3}
+        \skill{SPSS}{3}
+
+    \vspace{0.5em}
+    \skillsection{AI Development}
+        \skill{OpenAI}{4}
+        \skill{Azure AI}{4}
+        \skill{RAG Application Design}{3}
+        % \skill{Business Case Evaluation}{3}
+        
+
+   \section{Strategic Impact}
+        \tag{Executive Engagement}
+        \tag{Data-Driven Decision Making}
+        \tag{Business Intelligence}
+        \tag{Project Leadership}
+        \tag{Executive Education}
+
+    \section{Digital Strategy Expertise}
+        \tag{SEO}
+        \tag{CDP Development}
+        \tag{Web Traffic}
+        \tag{Customer Segmentation}
+        \tag{Ecommerce}
+        \tag{Targeted Advertising}
+        \tag{Customer Journey}
+        \tag{Digital Subscriptions}
+        \tag{Email Marketing}
+        \tag{Social Media}
+        \tag{Syndication}
+}
+
+\mainbar{
+    \section{Experience}
+
+    % Experience 1
+    % \job{Jan 2020 -- Present}{Company ABC}{Software Engineer}{City A}
+
+    \subsection{{Analytics Engineer  \hfill April 2023 --- April 2024}}
+    \subtext{Penske Media Corporation \hfill LA, California (remote)}
+    \begin{zitemize}
+        \small
+        \item{Engineered fine-tuned LLM applications deployed to Azure to support generative AI integrations in WordPress.}
+        \item{Architected end-to-end SEO analytics workflows in GCP to forecast organic performance with first party web data, second party demographic data, and historical trends.}
+        \item{Strategized with senior executives to determine subscription strategy at Rolling Stone, Billboard, and Variety.}
+    \end{zitemize}
+
+    \subsection{{Digital Media Analyst  \hfill April 2022 --- April 2023}}
+    \subtext{Penske Media Corporation \hfill LA, California (remote)}
+    \begin{zitemize}
+        \small
+        \item{Created standardized reporting for Billboard Espanol to determine publishing strategy in key regional markets.}
+        \item{Determined revenue channels to target in order for Rolling Stone to meet financial goals.}
+        \item{Steered adoption of artificial intelligence in publishing by collaborating with senior executives to analyze businesses cases for generative ai development.}
+    \end{zitemize}
+
+    \subsection{{Freelance Work  \hfill May 2021 --- April 2022}}
+    \subtext{BTJN, LLC \hfill Houston, Texas}
+    \begin{zitemize}
+        \small
+        % \item{Founded company to work on freelance contracts.}
+        \item{Optimized marketing strategy by developing CDP platforms to identify valuable potential customers.}
+        \item{Improved analysis pipeline efficiency by moving legacy systems to GCP.}
+        \item{Automated email marketing initiatives to forward targeted newsletters.}
+    \end{zitemize}
+
+    \subsection{{Research Assistant \hfill Jan 2018 --- Aug 2019}}
+    \subtext{University of Central Florida \hfill Orlando, Florida} 
+    \begin{zitemize}
+        \small
+        \item{Identified regional socioeconomic features correlated with higher investment risks within Turkey.}
+        \item{Reviewed feasibility of proposed hydroelectric development across developing regions and their possible impact on local populations.}
+        % \item{Developed international law framework from primary sources.}
+        \item{Prepared presentation peer-reviewed at the Peace Science Conference at the Hague.}
+    \end{zitemize}
+
+    % \section{Strategic Project Leadership}
+    %     \tag{Stakeholder Management}
+    %     \tag{Project Scoping}
+    %     \tag{Executive Communications}
+    %     \tag{Vendor Evaluation}
+
+    % \section{Digital Strategy Expertise}
+    %     \tag{SEO}
+    %     \tag{CDP Development}
+    %     \tag{Web Traffic}
+    %     \tag{Customer Segmentation}
+    %     \tag{Ecommerce}
+    %     \tag{Targeted Advertising}
+    % %     \tag{Customer Journeys}
+
+    % \section{Analytic Platform Proficiency}
+    %     \tag{Google Analytics}
+    %     \tag{Google Search Console}
+    %     \tag{Semrush}
+    %     \tag{Zuora}
+    %     \tag{Piano}
+    %     \tag{Swoogo}
+    %     \tag{Comscore}
+    %     \tag{Shareablee}
+    \section{Digital Analytics Toolbox}
+        \tag{Google Analytics}
+        \tag{Google Search Console}
+        \tag{SEMrush}
+        \tag{Zuora}
+        \tag{Piano}
+        \tag{Swoogo}
+        \tag{Comscore}
+        \tag{Shareablee}
+        \tag{Hotjar}
+        \tag{Cxense}
+        \tag{CDS Global}
+        \tag{Moz}
+        \tag{Dun \& Bradstreet}
+
+    \section{Publications} 
+    \pubdefaultspacing
+    \justinpublication
+    {Turkish Kurdish Analysis Database} 
+    {Demet Mousseau, \textbf{Justin Napolitano}, Alex Olson} 
+    {2019} 
+    {Peace Economics, Peace Science and Public Policy vol 25, no. 4, pp. 36} 
+    {\doi{https://doi.org/10.1515/peps-2019-0036}}
+}
+    
+\makebody
 
 \end{document}

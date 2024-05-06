@@ -528,6 +528,7 @@
     \textcolor{emphasis}{\textbf{#1}}\hfill
     \foreach \x in {1,...,5}{%
       \space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\faCircle}}\par%
+    \vspace{0.2em}% Adjust the vertical space here
 }
 
 % skill without any charts
@@ -762,14 +763,17 @@
 
 %\setlist[itemize]{align=parleft,left=0pt..1em}
 \newenvironment{zitemize}{
-    \vspace{-.5em}
+    \raggedright % Prevents hyphenation
+    \vspace{-.3em}
     \begin{itemize} 
-        \itemsep .5pt \parskip 0pt \parsep 0pt
-        }
+        \itemsep 0.5em % Adjust the space between items here
+        \parskip 0pt 
+        \parsep 0pt
+    }
     {
         \end{itemize}
-        \vspace{.5em}
-        }
+        \vspace{0.5em} % Adjust the space after the list here
+    }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FINAL FORMATTING

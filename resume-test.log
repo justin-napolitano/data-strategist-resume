@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.1)  6 MAY 2024 12:06
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.1)  6 MAY 2024 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**resume.tex
-(./resume.tex
+**resume-test.tex
+(./resume-test.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (./my-resume.cls
@@ -829,8 +829,8 @@ text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 
-(./resume.aux)
-\openout1 = `resume.aux'.
+(./resume-test.aux)
+\openout1 = `resume-test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
@@ -961,9 +961,13 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 26.
-(./resume.out) (./resume.out)
+(./resume-test.out) (./resume-test.out)
 \@outlinefile=\write4
-\openout4 = `resume.out'.
+\openout4 = `resume-test.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -973,7 +977,6 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
 (scrartcl)           before \begin{document} on input line 26.
-
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
@@ -989,62 +992,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--32
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Class scrartcl Warning: odd/even page label number 1 undefined on input line 21
+4.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 [][]  []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 [][]  []  []  []  []
  []
 
 
 LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 154.
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 214.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
 [1
 
-] (./resume.aux)
+] (./resume-test.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1053,16 +1060,22 @@ L3 programming layer <2020/03/25>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `resume.out' has not changed.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `resume-test.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32414 strings out of 474878
- 717569 string characters out of 5762517
+ 32417 strings out of 474878
+ 717727 string characters out of 5762517
  1966627 words of memory out of 5000000
- 54016 multiletter control sequences out of 15000+600000
+ 54019 multiletter control sequences out of 15000+600000
  561659 words of font info for 68 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 125i,15n,121p,10902b,816s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,15n,121p,10907b,816s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.pdf (1 page).
+Output written on resume-test.pdf (1 page).
