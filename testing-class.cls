@@ -848,14 +848,17 @@
     \vspace{1.0em}
 }
 
-\newcommand{\justinpublication}[5]{
+\newcommand{\justinpublication}[4]{
     \subsection{{#1}}
-    \vspace{0.1em}
+    \vspace{0.2em}
     \par%
-    \subtext{\faBook \hspace{.5em} #4}
+    \subtext{\faBook \hspace{.5em} #3}
+    \vspace{0.2em}
     \subtext{\faGroup \hspace{.5em} #2}
-    \subtext{\faChain \hspace{.5em} #5}
-    \subtext{\faCalendar \hspace{.5em} #3 }
+    \vspace{0.2em}
+    \subtext{\faChain \hspace{.5em} #4}
+    \vspace{0.2em}
+    % \subtext{\faCalendar \hspace{.5em} #3 }
     % \hfill \faChain \hspace{.5em} #5}
     
     \par%

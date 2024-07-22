@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  22 JUL 2024 15:16
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  22 JUL 2024 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -812,7 +812,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip79
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 948.
+Package hyperref Info: Option `colorlinks' set `true' on input line 951.
 )
 
 Package fontspec Info: Font family 'Carlito(0)' created for font 'Carlito'
@@ -1028,58 +1028,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--35
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[][]  []  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 [][]  []
  []
 
 
-Underfull \hbox (badness 6641) in paragraph at lines 205--205
+Underfull \hbox (badness 3713) in paragraph at lines 215--215
+[]  []
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 215--215
+[][]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[][]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[][]  []
+ []
+
+
+Underfull \hbox (badness 6641) in paragraph at lines 215--215
 []  []  []  []
  []
 
 
 LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 205.
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 215.
 
 [1
 
@@ -1097,7 +1087,7 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  32240 strings out of 476191
  712861 string characters out of 5812072
- 1264008 words of memory out of 5000000
+ 1264019 words of memory out of 5000000
  52526 multiletter control sequences out of 15000+600000
  473773 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
