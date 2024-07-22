@@ -1,4 +1,5 @@
-\documentclass[doublesided, paper=a4, fontsize=11.0pt]{my-resume}
+% \documentclass[doublesided, paper=a4, fontsize=10.5pt]{my-resume}
+\documentclass[singlesided, paper=a4, fontsize=10.5pt]{testing-class}
 
 % Set geometry
 \setlength\highlightwidth{8cm}
@@ -26,10 +27,12 @@
 \begin{document}
 
 \name{Justin Napolitano}
-\tagline{Data strategist specializing in the design and implementation of cloud-based \\ analytics workflows.}
+\tagline{Data strategist specializing in the design and implementation of cloud-based analytics workflows.}
 \photo[round]{head_shot.jpeg}{\dimexpr 4cm-\marginbottom}
 
-\makeheader
+% \makeheader
+% \alignedheader{left}
+\alignedheadertest[circle]{left}
 
 \highlightbar{
     \section{Contact}
@@ -42,29 +45,8 @@
     \section{Education}
     \subsection{BA, Political Science \hfill Aug 2018}
     \subtext{University of Central Florida \hfill Orlando, Florida}
-    
-   \section{Strategic Impact}
-        \tag{Executive Engagement}
-        \tag{Data-Driven Decision Making}
-        \tag{Business Intelligence}
-        \tag{Project Leadership}
-        \tag{Executive Education}
-    
-    \vspace{1.0em}
-    \section{Digital Strategy Expertise}
-        \tag{SEO}
-        \tag{CDP Development}
-        \tag{Web Traffic}
-        \tag{Customer Segmentation}
-        \tag{E-commerce}
-        \tag{Targeted Advertising}
-        \tag{Customer Journey}
-        \tag{Digital Subscriptions}
-        \tag{Email Marketing}
-        \tag{Social Media}
-        \tag{Syndication}
 
-    \vspace{1.0em}
+    \vspace{0.5cm}
     \section{Technical Proficiency}
 
         \vspace{0.5em}
@@ -75,8 +57,8 @@
     
         \vspace{0.5em}
         \skillsection{Cloud Providers}
+            \skill{GCP}{5}
             \skill{Azure}{3}
-            \skill{GCP}{3}
             \skill{AWS}{3}
     
         \vspace{0.5em}
@@ -91,6 +73,48 @@
             \skill{OpenAI}{4}
             \skill{Azure AI}{4}
             \skill{RAG Application Design}{3}
+    
+    \vspace{0.5cm}
+    \section{Strategic Impact}
+    \vspace{0.3cm}
+        \tag{Executive Engagement}
+        \tag{Data-Driven Decision Making}
+        \tag{Business Intelligence}
+        \tag{Project Leadership}
+        \tag{Executive Education}
+    
+    \vspace{0.5cm}
+    \section{Digital Strategy Expertise}
+    \vspace{0.3cm}
+        \tag{SEO}
+        \tag{CDP Development}
+        \tag{Web Traffic}
+        \tag{Customer Segmentation}
+        \tag{E-commerce}
+        \tag{Targeted Advertising}
+        \tag{Customer Journey}
+        \tag{Digital Subscriptions}
+        \tag{Email Marketing}
+        \tag{Social Media}
+        \tag{Syndication}
+    
+    \vspace{0.52cm}  
+    \section{Digital Analytics Toolbox}
+    \vspace{0.3cm}
+        \tag{Google Analytics}
+        \tag{Google Search Console}
+        \tag{SEMrush}
+        \tag{Zuora}
+        \tag{Piano}
+        \tag{Swoogo}
+        \tag{Comscore}
+        \tag{Shareablee}
+        \tag{Hotjar}
+        \tag{Cxense}
+        \tag{CDS Global}
+        \tag{Moz}
+        \tag{Dun \& Bradstreet}
+
 }
 
 \mainbar{
@@ -166,15 +190,16 @@
     %     \tag{CDS Global}
     %     \tag{Moz}
     %     \tag{Dun \& Bradstreet}
-
+    \vspace{0.4cm}
     \section{Publications} 
-    \pubdefaultspacing
+    % \pubdefaultspacing
     \justinpublication
     {Turkish Kurdish Analysis Database} 
     {Demet Mousseau, \textbf{Justin Napolitano}, Alex Olson} 
     {2019} 
     {Peace Economics, Peace Science and Public Policy vol 25, no. 4, pp. 36} 
-    {\doi{https://doi.org/10.1515/peps-2019-0036}}
+    {\doi{doi.org/10.1515/peps-2019-0036}{https://doi.org/10.1515/peps-2019-0036}
+    }
 }
 
 \makebody
