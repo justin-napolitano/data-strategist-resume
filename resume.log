@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  22 JUL 2024 11:40
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  22 JUL 2024 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -45,7 +45,14 @@ Package: tocbasic 2021/11/13 v3.35 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 135.
+Class scrartcl Info: File `scrsize11pt.clo' used instead of
+(scrartcl)           file `scrsize11.0pt.clo' to setup font sizes on input line
+ 2242.
 
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/11/13 v3.35 KOMA-Script font size class option (11pt
+)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2021/11/13 v3.35 KOMA-Script package (type area)
 \ta@bcor=\skip48
@@ -54,29 +61,22 @@ Package: typearea 2021/11/13 v3.35 KOMA-Script package (type area)
 \ta@vblk=\skip50
 \ta@temp=\skip51
 \footheight=\skip52
-
-
-Package typearea Warning: DIV for 10.5pt and used papersize
-(typearea)                not defined!
-(typearea)                Using DIV=calc.
-
-DIV calculation for typearea with good linewidth.
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 7
+(typearea)             DIV  = 10
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 341.4331pt
-(typearea)              DIV departure   = 1%
-(typearea)              \evensidemargin = 98.44656pt
-(typearea)              \oddsidemargin  = 13.08829pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 47.2316pt
+(typearea)              \oddsidemargin  = -12.5192pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 489.2985pt
-(typearea)              \topmargin      = 13.80112pt
-(typearea)              \headheight     = 15.74994pt
-(typearea)              \headsep        = 18.89993pt
-(typearea)              \topskip        = 10.5pt
-(typearea)              \footskip       = 44.09984pt
-(typearea)              \baselineskip   = 12.59996pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
 (typearea)              on input line 1743.
 )
 \c@part=\count182
@@ -128,7 +128,8 @@ Package tocbasic Info: babel extension for `lot' omitted
 \c@table=\count189
 Class scrartcl Info: Redefining `\numberline' on input line 6258.
 \bibindent=\dimen138
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 2.
@@ -939,12 +940,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \topmargin=-43.81725pt
 * \headheight=0.0pt
 * \headsep=0.0pt
-* \topskip=10.5pt
+* \topskip=11.0pt
 * \footskip=0.0pt
 * \marginparwidth=0.0pt
 * \marginparsep=0.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.44997pt plus 4.19952pt minus 2.10043pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -990,56 +991,59 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 \BKM@id=\count328
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+File: head_shot.jpeg Graphic file (type bmp)
+<head_shot.jpeg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 1789) in paragraph at lines 180--180
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 3977) in paragraph at lines 180--180
 [][]  []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 5288) in paragraph at lines 180--180
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-[][]  []  []  []  []
  []
 
 
 LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 154.
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 180.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
@@ -1053,12 +1057,12 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32170 strings out of 476191
- 711209 string characters out of 5812072
- 1258215 words of memory out of 5000000
- 52460 multiletter control sequences out of 15000+600000
+ 32215 strings out of 476191
+ 712352 string characters out of 5812072
+ 1252405 words of memory out of 5000000
+ 52500 multiletter control sequences out of 15000+600000
  472849 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 125i,15n,120p,10602b,814s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 125i,15n,120p,10602b,812s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).
