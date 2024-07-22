@@ -1,4 +1,5 @@
-\documentclass[doublesided, paper=a4, fontsize=10.5pt]{my-resume}
+% \documentclass[doublesided, paper=a4, fontsize=10.5pt]{my-resume}
+\documentclass[singlesided, paper=a4, fontsize=10.5pt]{testing-class}
 
 % Set geometry
 \setlength\highlightwidth{8cm}
@@ -26,44 +27,29 @@
 \begin{document}
 
 \name{Justin Napolitano}
-\tagline{Data strategist specializing in the design and implementation of cloud-based \\ analytics workflows. Eager to tackle new challenges and engineer innovative solutions.}
+\tagline{Collaborative Data Strategist Striving to Discover Actionable Insights to Define Newsroom Strategy}
 \photo[round]{head_shot.jpeg}{\dimexpr 4cm-\marginbottom}
 
-\makeheader
+% \makeheader
+% \alignedheader{left}
+\alignedheadertest[circle]{left}
 
 \highlightbar{
     \section{Contact}
+    \vspace{0.1cm}
     \email{personal.jnapolitano@gmail.com}
-    \phone{+1-832-446-8685}
-    \location{Houston, Texas}
-    \github{justin-napolitano}{https://github.com/justin-napolitano}
-    \linkedin{justin-napolitano}{https://www.linkedin.com/in/justin-napolitano}
-    
+    \phone{832-446-8685}
+    \homepage{jnapolitano.io}{https://jnapolitano.io}
+    % \location{Houston, Texas}
+    \github{github.com/justin-napolitano}{https://github.com/justin-napolitano}
+    \linkedin{linkedin.com/in/justin-napolitano}{https://www.linkedin.com/in/justin-napolitano}
+                  
     \section{Education}
     \subsection{BA, Political Science \hfill Aug 2018}
     \subtext{University of Central Florida \hfill Orlando, Florida}
-    
-   \section{Strategic Impact}
-        \tag{Executive Engagement}
-        \tag{Data-Driven Decision Making}
-        \tag{Business Intelligence}
-        \tag{Project Leadership}
-        \tag{Executive Education}
 
-    \section{Digital Strategy Expertise}
-        \tag{SEO}
-        \tag{CDP Development}
-        \tag{Web Traffic}
-        \tag{Customer Segmentation}
-        \tag{E-commerce}
-        \tag{Targeted Advertising}
-        \tag{Customer Journey}
-        \tag{Digital Subscriptions}
-        \tag{Email Marketing}
-        \tag{Social Media}
-        \tag{Syndication}
-
-    \section{Technical Proficiency}
+    \vspace{0.5cm}
+    \section{Technical Skillset}
 
         \vspace{0.5em}
         \skillsection{Data Platforms}
@@ -73,8 +59,8 @@
     
         \vspace{0.5em}
         \skillsection{Cloud Providers}
+            \skill{GCP}{5}
             \skill{Azure}{3}
-            \skill{GCP}{3}
             \skill{AWS}{3}
     
         \vspace{0.5em}
@@ -89,44 +75,44 @@
             \skill{OpenAI}{4}
             \skill{Azure AI}{4}
             \skill{RAG Application Design}{3}
-}
+    
+    \vspace{0.5cm}
+    \section{Core Proficiences}
+    \vspace{0.3cm}  
+        % \tag{Data-Driven Decision Making}
+        \tag{Business Intelligence}
+        % \tag{Google Cloud Platform}
+        \tag{Data Engineering}
+        \tag{Stakeholder Education}
+        \tag{Data Visualization}
+        \tag{Executive Engagement}
+        \tag{Vendor Evaluation}
 
-\mainbar{
-    \section{Experience}
-
-    \subsection{Analytics Engineer \hfill April 2023 --- April 2024}
-    \subtext{Penske Media Corporation \hfill LA, California (remote)}
-    \begin{zitemize}
-        \item Engineered fine-tuned LLM applications deployed to Azure to support generative AI integrations in WordPress.
-        \item Architected end-to-end SEO analytics workflows in GCP to forecast organic performance using first-party web data, second-party demographic data, and historical trends.
-        \item Strategized with senior executives to determine subscription strategies at Rolling Stone, Billboard, and Variety.
-    \end{zitemize}
-
-    \subsection{Digital Media Analyst \hfill April 2022 --- April 2023}
-    \subtext{Penske Media Corporation \hfill LA, California (remote)}
-    \begin{zitemize}
-        \item Created standardized reporting for Billboard Español to determine publishing strategy in key regional markets.
-        \item Determined revenue channels to target for Rolling Stone to meet financial goals.
-        \item Steered the adoption of artificial intelligence in publishing by collaborating with senior executives to analyze business cases for generative AI development.
-    \end{zitemize}
-
-    \subsection{Freelance Work \hfill May 2021 --- April 2022}
-    \subtext{BTJN, LLC \hfill Houston, Texas}
-    \begin{zitemize}
-        \item Optimized marketing strategy by developing CDP platforms to identify valuable potential customers.
-        \item Improved analysis pipeline efficiency by migrating legacy systems to GCP.
-        \item Automated email marketing initiatives to advance targeted newsletters.
-    \end{zitemize}
-
-    \subsection{Research Assistant \hfill Jan 2018 --- Aug 2019}
-    \subtext{University of Central Florida \hfill Orlando, Florida} 
-    \begin{zitemize}
-        \item Identified regional socioeconomic features correlated with higher investment risks in developing regions.
-        \item Reviewed the feasibility of proposed hydroelectric developments in developing regions and their impact on local populations.
-        \item Prepared a presentation that was peer-reviewed at the Peace Science Conference at the Hague.
-    \end{zitemize}
-
+    
+    % \vspace{0.5cm}
+    \vspace{0.5cm}
+    \section{Digital Strategy Expertise}
+    \vspace{0.3cm}
+        \tag{Search Engine Optimization}
+        \tag{Social Media}
+        \tag{CDP Development}
+        \tag{Syndication Strategy}
+        
+        \tag{Customer Segmentation}
+        \tag{Traffic Analysis}
+        % \tag{Ecommerce}
+        \tag{Targeted Advertising}
+        \tag{Customer Journeys}
+        \tag{Digital Subscriptions}
+        \tag{Email Marketing}
+        
+        
+        % \tag{Site Design}
+    
+    % \vspace{0.52cm}  
+    \vspace{0.45cm}
     \section{Digital Analytics Toolbox}
+    \vspace{0.3cm}
         \tag{Google Analytics}
         \tag{Google Search Console}
         \tag{SEMrush}
@@ -141,14 +127,92 @@
         \tag{Moz}
         \tag{Dun \& Bradstreet}
 
+}
+
+\mainbar{
+    \section{Experience}
+
+    \subsection{Data \&\ AI Engineer \hfill April 2023 --- April 2024}
+    \subtext{Penske Media Corporation \hfill LA, California (remote)}
+    \begin{zitemize}
+        \item Engineered and fine-tuned large language model (LLM) applications deployed on Azure to support generative AI integrations within WordPress.
+        \item Identified AI-driven business opportunities by collaborating with executives and editors to inform strategic shifts in content creation and distribution.
+        \item Conducted comprehensive evaluations of AI and data vendors to assess their technical capabilities, cost efficiency, and alignment with business objectives in order to inform executive decision-making.  
+        % \item Architected comprehensive SEO analytics reporting systems in Google Cloud Platform (GCP) to accurately forecast organic performance using first-party web data and second-party demographic data.
+        % using first-party web data and second-party demographic data
+    \end{zitemize}
+
+    \subsection{Media Strategist \&\ Analytics Engineer \hfill April 2022 --- April 2023}
+    \subtext{Penske Media Corporation \hfill LA, California (remote)}
+    \begin{zitemize}
+        \item Established key performance indicators (KPIs) for audience marketing and subscriptions teams, developed an extensive reporting infrastructure in Google Cloud Platform (GCP), and provided executive-level training on their implementation and analysis.
+        \item Collaborated with the Chief Editors of Rolling Stone, Fairchild Media, and Billboard Español to develop and refine social media, SEO, and publishing roadmaps.
+        \item Acted as the lead liaison between the data and SEO teams, built robust reporting workflows to uncover news cycle trends, and advised the SEO team upon the impact of algorithm changes across the portfolio.        
+    \end{zitemize}
+
+    \subsection{Independent Consulting \hfill May 2021 --- April 2022}
+    \subtext{BTJN, LLC \hfill Houston, Texas}
+    \begin{zitemize}
+        \item Optimized marketing strategy by developing and implementing Customer Data Platforms (CDP) to accurately identify and target high-value potential customers.
+        \item Enhanced analysis pipeline efficiency by migrating legacy systems to Google Cloud Platform (GCP), resulting in improved data processing speeds and reduced operational costs.
+        \item Automated email marketing initiatives, leveraging data-driven insights to create and distribute highly targeted newsletters, increasing customer engagement and conversion rates.
+    \end{zitemize}
+
+    \subsection{Research Assistant \hfill Jan 2018 --- Aug 2019}
+    \subtext{University of Central Florida \hfill Orlando, Florida} 
+    \begin{zitemize}
+        \item Led a data team to track and document human rights abuses against civilians in conflict zones maintaining rigorous standards for accuracy and completeness.
+        \item Developed an international human rights law rubric based on international treaties enabling research assistants to systematically code and analyze violations.
+        % \item Prepared reports presented at the Peace Science Conference at The Hague with subsequent publication by De Gruyter.
+        \item Prepared studies uncovering novel findings of abuse against women presented at The Hague and subsequently published by De Gruyter.
+
+    \end{zitemize}
+
+
+
+    % \subsection{Independent Consulting \hfill May 2021 --- April 2022}
+    % \subtext{BTJN, LLC \hfill Houston, Texas}
+    % \begin{zitemize}
+    %     \item Optimized marketing strategy by developing CDP platforms to identify valuable potential customers.
+    %     \item Improved analysis pipeline efficiency by migrating legacy systems to GCP.
+    %     \item Automated email marketing initiatives to advance targeted newsletters.
+    % \end{zitemize}
+
+    % \subsection{Research Assistant \hfill Jan 2018 --- Aug 2019}
+    % \subtext{University of Central Florida \hfill Orlando, Florida} 
+    % \begin{zitemize}
+    %     \item Prepared reports presented at the Peace Science Conference at the Hague following publication by De Grutyer.
+    %     \item Managed a data project to identify human right abuses against civillians in conflict zones.
+    %     \item Developed an international human rights Law rubric from international treaties to permit research assistants to code violations.
+        % \item Identified regional socioeconomic features correlated with higher investment risks in developing regions.
+        % \item Reviewed the feasibility of proposed hydroelectric developments in developing regions and their impact on locals populations.
+        
+    % \end{zitemize}
+
+    % \section{Digital Analytics Toolbox}
+    %     \tag{Google Analytics}
+    %     \tag{Google Search Console}
+    %     \tag{SEMrush}
+    %     \tag{Zuora}
+    %     \tag{Piano}
+    %     \tag{Swoogo}
+    %     \tag{Comscore}
+    %     \tag{Shareablee}
+    %     \tag{Hotjar}
+    %     \tag{Cxense}
+    %     \tag{CDS Global}
+    %     \tag{Moz}
+    %     \tag{Dun \& Bradstreet}
+    \vspace{0.4cm}
     \section{Publications} 
-    \pubdefaultspacing
+    % \pubdefaultspacing
     \justinpublication
     {Turkish Kurdish Analysis Database} 
     {Demet Mousseau, \textbf{Justin Napolitano}, Alex Olson} 
-    {2019} 
+    % {2019} 
     {Peace Economics, Peace Science and Public Policy vol 25, no. 4, pp. 36} 
-    {\doi{https://doi.org/10.1515/peps-2019-0036}}
+    {\doi{doi.org/10.1515/peps-2019-0036}{https://doi.org/10.1515/peps-2019-0036}
+    }
 }
 
 \makebody

@@ -1,11 +1,15 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  22 MAY 2024 14:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  22 JUL 2024 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **resume.tex
 (./resume.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21> (./my-resume.cls
+L3 programming layer <2022-01-21> (./testing-class.cls
+
+LaTeX Warning: You have requested document class `testing-class',
+               but the document class provides `my-resume'.
+
 Document Class: my-resume 2020/11/17 my-resume v0.1, my own resume/CV class.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
@@ -45,6 +49,12 @@ Package: tocbasic 2021/11/13 v3.35 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 135.
+Class scrartcl Info: You've used standard option `oneside'.
+(scrartcl)           This is correct!
+(scrartcl)           Internally I'm using `twoside=false'.
+(scrartcl)           If you'd like to set the option with \KOMAoptions,
+(scrartcl)           you'd have to use `twoside=false' there
+(scrartcl)           instead of `oneside', too.
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2021/11/13 v3.35 KOMA-Script package (type area)
@@ -67,8 +77,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 341.4331pt
 (typearea)              DIV departure   = 1%
-(typearea)              \evensidemargin = 98.44656pt
-(typearea)              \oddsidemargin  = 13.08829pt
+(typearea)              \evensidemargin = 55.76743pt
+(typearea)              \oddsidemargin  = 55.76743pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 489.2985pt
 (typearea)              \topmargin      = 13.80112pt
@@ -802,7 +812,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip79
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 784.
+Package hyperref Info: Option `colorlinks' set `true' on input line 951.
 )
 
 Package fontspec Info: Font family 'Carlito(0)' created for font 'Carlito'
@@ -832,93 +842,93 @@ text;"
 (./resume.aux)
 \openout1 = `resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-6.
+7.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-Package scrbase Info: activating english \contentsname on input line 26.
-Package scrbase Info: activating english \listfigurename on input line 26.
-Package scrbase Info: activating english \listtablename on input line 26.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+Package scrbase Info: activating english \contentsname on input line 27.
+Package scrbase Info: activating english \listfigurename on input line 27.
+Package scrbase Info: activating english \listtablename on input line 27.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 26.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 26.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 26.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 26.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 26.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 26.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 26.
-LaTeX Font Info:    Redeclaring math accent \check on input line 26.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 26.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 26.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 26.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 26.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 27.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 27.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 27.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 27.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 27.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 27.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 27.
+LaTeX Font Info:    Redeclaring math accent \check on input line 27.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 27.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 27.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 27.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 27.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 26.
+(Font)              `operators' in the math version `normal' on input line 27.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Carlito(0)/m/n on input line 26.
+(Font)                  OT1/cmr/m/n --> TU/Carlito(0)/m/n on input line 27.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 26.
+(Font)              `operators' in the math version `bold' on input line 27.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Carlito(0)/m/n on input line 26.
+(Font)                  OT1/cmr/bx/n --> TU/Carlito(0)/m/n on input line 27.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/Carlito(0)/m/n --> TU/Carlito(0)/m/n on input line 2
-6.
+7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Carlito(0)/m/it on input line 26.
+(Font)                  OT1/cmr/m/it --> TU/Carlito(0)/m/it on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Carlito(0)/b/n on input line 26.
+(Font)                  OT1/cmr/bx/n --> TU/Carlito(0)/b/n on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 26.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 26.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 27.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/Carlito(0)/m/n --> TU/Carlito(0)/b/n on input line 2
-6.
+7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Carlito(0)/b/it on input line 26.
+(Font)                  OT1/cmr/bx/it --> TU/Carlito(0)/b/it on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 26.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 26.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -927,16 +937,16 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(28.45274pt, 540.60245pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 788.14145pt, 28.45274pt)
+* v-part:(T,H,B)=(14.22636pt, 802.36783pt, 28.45274pt)
 * \paperwidth=597.50793pt
 * \paperheight=845.04694pt
 * \textwidth=540.60245pt
-* \textheight=788.14145pt
+* \textheight=802.36783pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-43.81725pt
+* \topmargin=-58.04362pt
 * \headheight=0.0pt
 * \headsep=0.0pt
 * \topskip=10.5pt
@@ -949,12 +959,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 26.
+Package hyperref Info: Link coloring ON on input line 27.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -966,9 +976,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count327
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (./resume.out) (./resume.out)
 \@outlinefile=\write4
@@ -981,7 +991,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 26.
+(scrartcl)           before \begin{document} on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -990,70 +1000,84 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 \BKM@id=\count328
 ))
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 35.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 35.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 35.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.5> on input line 35.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.34996> on input line 35.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.25> on input line 35.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 35.
+
 File: head_shot.jpeg Graphic file (type bmp)
 <head_shot.jpeg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-[][]
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[][]  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 3713) in paragraph at lines 218--218
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-[][]  []  []
+Underfull \hbox (badness 3826) in paragraph at lines 218--218
+[][]  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[][]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-[]  []
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[][]  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-[]  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-[][]  []  []  []  []
+Underfull \hbox (badness 6641) in paragraph at lines 218--218
+[]  []  []  []
  []
 
 
 LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 154.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 218.
 
 [1
 
 ] (./resume.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.45pt have occurred.
+
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1061,12 +1085,12 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32214 strings out of 476191
- 712291 string characters out of 5812072
- 1259215 words of memory out of 5000000
- 52501 multiletter control sequences out of 15000+600000
- 472849 words of font info for 60 fonts, out of 8000000 for 9000
+ 32240 strings out of 476191
+ 712861 string characters out of 5812072
+ 1264019 words of memory out of 5000000
+ 52526 multiletter control sequences out of 15000+600000
+ 473773 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 125i,15n,120p,10602b,813s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 125i,15n,120p,10602b,810s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).

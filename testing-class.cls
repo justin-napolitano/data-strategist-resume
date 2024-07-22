@@ -6,14 +6,8 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% CLASS OPTIONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{my-resume}[2020/11/17 my-resume v0.1, my own resume/CV class.]
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CLASS OPTIONS
@@ -36,8 +30,6 @@
 
 \LoadClass{scrartcl}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % REQUIRED PACKAGES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -52,7 +44,6 @@
 \RequirePackage{fontawesome}
 \RequirePackage{academicons}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FILTER IRRELEVANT WARNINGS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,7 +52,6 @@
 
 % The page header is deliberately disabled in my-resume, so the warning by scrlayer-scrpage is invalid. 
 \WarningFilter{scrlayer-scrpage}{Very small head height detected!}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DEFINE GEOMETRY
@@ -76,7 +66,7 @@
 
 % default sizes, margins, ...
 \setlength\highlightwidth{8cm}
-\setlength\headerheight{1cm}
+\setlength\headerheight{2cm}  % Adjusted header height
 \setlength\marginleft{1cm}
 \setlength\marginright{\marginleft}
 \setlength\margintop{0.5cm}
@@ -85,12 +75,8 @@
 \RequirePackage[bindingoffset=0cm,nomarginpar,noheadfoot]{geometry}
 \geometry{left=\marginleft,right=\marginright,top=\margintop,bottom=\marginbottom}
 
-% \setlength{\voffset}{\dimexpr -1in+\margintop}
-% \setlength{\topmargin}{0cm}
-
 % minipage has an annoying af indent that must be removed
 \setlength{\parindent}{0pt}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % COLORS
@@ -124,7 +110,6 @@
 \definecolor{awesome-nephritis}{HTML}{27AE60}
 \definecolor{awesome-concrete}{HTML}{95A5A6}
 \definecolor{awesome-darknight}{HTML}{131A28}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % COLORED BARS
@@ -227,10 +212,6 @@
 \cofoot[]{}
 \rofoot[]{}
 
-% convenience functions to enable/disable header or highlightbar
-% TBD
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -248,6 +229,188 @@
 \settoheight{\@namefontheight}{\large\bfseries\MakeUppercase{A}}
 \setlength\@namelineheight{1\@namefontheight}
 
+% Define a new header to center the name at the top of the page
+\newcommand{\centeredheader}{%
+    \begin{center}
+        {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+        \ifdefined\@tagline
+            \vspace{0.5em}
+            {\large\color{headerfontcolor}\@tagline\par}
+        \fi
+    \end{center}
+}
+
+% Define a new header to align the name and tagline based on the argument
+\newcommand{\alignedheader}[1]{%
+    \ifthenelse{\equal{#1}{center}}{%
+        \begin{center}
+            {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+            \ifdefined\@tagline
+                \vspace{0.5em}
+                {\large\color{headerfontcolor}\@tagline\par}
+            \fi
+        \end{center}
+    }{%
+        \ifthenelse{\equal{#1}{left}}{%
+            \begin{flushleft}
+                {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                \ifdefined\@tagline
+                    \vspace{0.5em}
+                    {\large\color{headerfontcolor}\@tagline\par}
+                \fi
+            \end{flushleft}
+        }{%
+            \begin{flushright}
+                {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                \ifdefined\@tagline
+                    \vspace{0.5em}
+                    {\large\color{headerfontcolor}\@tagline\par}
+                \fi
+            \end{flushright}
+        }
+    }
+}
+
+% Define a new header to align the name, tagline, and optionally a photo based on the alignment argument
+% Define a new header to align the name, tagline, and optionally a photo based on the alignment argument
+% Define a new header to align the name, tagline, and optionally a photo based on the alignment argument
+% Define a new header to align the name, tagline, and optionally a photo based on the alignment argument
+% Define a new header to align the name, tagline, and optionally a photo based on the alignment argument
+\newcommand{\alignedheadertest}[2][]{%
+    \ifthenelse{\equal{#2}{center}}{%
+        \begin{center}
+            {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+            \ifdefined\@tagline
+                \vspace{0.5em}
+                {\large\color{headerfontcolor}\@tagline\par}
+            \fi
+        \end{center}
+    }{%
+        \ifthenelse{\equal{#2}{left}}{%
+            \begin{minipage}[c]{\dimexpr \textwidth - \ifdefined\@photo\@photodiameter + 0.5em\fi}
+                \begin{flushleft}
+                    {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                    \ifdefined\@tagline
+                        \vspace{0.5em}
+                        {\large\color{headerfontcolor}\@tagline\par}
+                    \fi
+                \end{flushleft}
+            \end{minipage}%
+            \ifdefined\@photo
+                \hfill
+                \begin{minipage}[c]{\@photodiameter}%
+                    \ifthenelse{\equal{#1}{square}}{%
+                        \includegraphics[width=\@photodiameter]{\@photo}%
+                    }{%
+                        \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5*\@photodiameter];
+                    }
+                \end{minipage}%
+            \fi
+        }{%
+            \ifthenelse{\equal{#2}{right}}{%
+                \ifdefined\@photo
+                    \begin{minipage}[c]{\@photodiameter}%
+                        \ifthenelse{\equal{#1}{square}}{%
+                            \includegraphics[width=\@photodiameter]{\@photo}%
+                        }{%
+                            \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5*\@photodiameter];
+                        }
+                    \end{minipage}%
+                    \hfill
+                \fi
+                \begin{minipage}[c]{\dimexpr \textwidth - \ifdefined\@photo\@photodiameter + 0.5em\fi}
+                    \begin{flushright}
+                        {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                        \ifdefined\@tagline
+                            \vspace{0.5em}
+                            {\large\color{headerfontcolor}\@tagline\par}
+                        \fi
+                    \end{flushright}
+                \end{minipage}%
+            }{}
+        }
+    }
+}
+
+% Usage:
+% To use this header, call \alignedheader[square]{center}, \alignedheader[square]{left}, or \alignedheader[square]{right} where appropriate in your document.
+
+
+
+% Usage:
+% To use this header, call \alignedheader[square]{center}, \alignedheader[square]{left}, or \alignedheader[square]{right} where appropriate in your document.
+
+% Usage:
+% To use this header, call \alignedheader[square]{center}, \alignedheader[square]{left}, or \alignedheader[square]{right} where appropriate in your document.
+
+
+% Usage:
+% To use this header, call \alignedheader[square]{center}, \alignedheader[square]{left}, or \alignedheader[square]{right} where appropriate in your document.
+
+
+% Define a new header to align the name, tagline, and photo based on the argument
+\newcommand{\alignedheaderimage}[2][]{%
+    \ifthenelse{\equal{#2}{center}}{%
+        \begin{center}
+            \ifdefined\@photo
+                \ifthenelse{\equal{#1}{square}}{%
+                    \includegraphics[width=\@photodiameter]{\@photo}\par
+                }{%
+                    \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\@photodiameter];
+                }
+                \vspace{0.5em}
+            \fi
+            {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+            \ifdefined\@tagline
+                \vspace{0.5em}
+                {\large\color{headerfontcolor}\@tagline\par}
+            \fi
+        \end{center}
+    }{%
+        \ifthenelse{\equal{#2}{left}}{%
+            \begin{flushleft}
+                \ifdefined\@photo
+                    \ifthenelse{\equal{#1}{square}}{%
+                        \includegraphics[width=\@photodiameter]{\@photo}\par
+                    }{%
+                        \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\@photodiameter];
+                    }
+                    \vspace{0.5em}
+                \fi
+                {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                \ifdefined\@tagline
+                    \vspace{0.5em}
+                    {\large\color{headerfontcolor}\@tagline\par}
+                \fi
+            \end{flushleft}
+        }{%
+            \begin{flushright}
+                \ifdefined\@photo
+                    \ifthenelse{\equal{#1}{square}}{%
+                        \includegraphics[width=\@photodiameter]{\@photo}\par
+                    }{%
+                        \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\@photodiameter];
+                    }
+                    \vspace{0.5em}
+                \fi
+                {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                \ifdefined\@tagline
+                    \vspace{0.5em}
+                    {\large\color{headerfontcolor}\@tagline\par}
+                \fi
+            \end{flushright}
+        }
+    }
+}
+
+% Usage:
+% To use this header, call \alignedheader[square]{center}, \alignedheader[square]{left}, or \alignedheader[square]{right} where appropriate in your document.
+
+
+% Usage:
+% To use this header, call \alignedheader{center}, \alignedheader{left}, or \alignedheader{right} where appropriate in your document.
+
+
 % assemble the header
 \newcommand{\makeheader}{% header bar is a minipage
     \begin{minipage}[t][\headerheight]{\textwidth}%
@@ -262,7 +425,7 @@
                 \end{minipage}%
                 \vfill%
                 \ifdefined\@tagline
-                \begin{minipage}[b][\dimexpr \headerheight-2em-\marginbottom]{\linewidth}%
+                \begin{minipage}[b][\dimexpr \headerheight-2em]{\linewidth}%
                     {\large\color{headerfontcolor}\@tagline\par}
                 \end{minipage}%
                 \fi
@@ -309,7 +472,6 @@
 \newcommand{\orcid}[2]{\infofield{\aiOrcid}{\href{#2}{#1}}}
 \newcommand{\ads}[2]{\infofield{\aiADS}{\href{#2}{#1}}}
 
-
 % highlight bar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -338,7 +500,8 @@
     \ifthenelse{\boolean{@singleordouble}}
         {% if single layout, the highlight bar is always left
             \@highlightbar
-            \hspace{\dimexpr \marginleft+\marginright}%
+            % \hspace{\dimexpr \marginleft+\marginright}%
+            \hspace{.75cm}%
             \@mainbar
         }{% if double layout, the highlight bar alternates
             \Ifthispageodd{% if the page is odd, the highlight bar is on the left (as is for single layout)
@@ -353,7 +516,6 @@
         }
 }
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SECTIONS, SUBSECTIONS, AND MORE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -361,22 +523,19 @@
 % SUBTEXT
 \newcommand{\subtext}[1]{\footnotesize\textit{#1}\par\vspace{.5em}}
 
-
-
 % redefine section in caps, bold and with rule below
 \renewcommand{\section}[2][]{%
-    \bigskip%
+    % \bigskip%
     % \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr 1pt-\baselineskip}\raggedright\input{#1}}}%
     \ifstrequal{#1}{}{}{\makebox[5mm][c]{#1}\hspace{0.5em}}
     {\color{heading}\normalsize\bfseries\MakeUppercase{#2}}\\[-1ex]%
-    {\color{heading}\rule{\linewidth}{1.0pt}\par}\smallskip
+    {\color{heading}\rule{\linewidth}{1.0pt}\par}
 }
 
 % redefine subsection as bold
 \renewcommand{\subsection}[1]{%
   \smallskip%
-  {\color{emphasis}\small{#1}\par} \smallskip
-%   \bfseries
+  {\color{emphasis}\small\bfseries{#1}\par} \smallskip
 }
 
 % format job/school list
@@ -530,7 +689,7 @@
     \textcolor{emphasis}{\textbf{#2}}
     }
 \newcommand{\skill}[2]{%
-    \textcolor{emphasis}{\textbf{#1}}\hfill
+    \textcolor{emphasis}{{#1}}\hfill
     \foreach \x in {1,...,5}{%
       \space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\faCircle}}\par%
     \vspace{0.2em}% Adjust the vertical space here
@@ -621,7 +780,7 @@
 
 \newcommand*{\ADS}[1]{\textcolor{awesome-skyblue}{\href{#1}{ADS}}}
 \newcommand*{\arXiv}[1]{\textcolor{awesome-skyblue}{\href{#1}{arXiv}}}
-\newcommand*{\doi}[1]{\textcolor{awesome-skyblue}{\href{#1}{DOI}}}
+\newcommand*{\doi}[2]{\textcolor{awesome-skyblue}{\href{#2}{#1}}}
 
 \newlength{\pubdatelength}
 \newlength{\pubjournallength}
@@ -689,14 +848,20 @@
     \vspace{1.0em}
 }
 
-\newcommand{\justinpublication}[5]{
+\newcommand{\justinpublication}[4]{
     \subsection{{#1}}
-    \vspace{0.1em}
-    \subtext{\faBook \hspace{.5em} #4}
+    \vspace{0.2em}
+    \par%
+    \subtext{\faBook \hspace{.5em} #3}
+    \vspace{0.2em}
     \subtext{\faGroup \hspace{.5em} #2}
-    \subtext{\faCalendar \hspace{.5em} #3 \hfill \faChain \hspace{.5em} #5}
-%    \subtext{#5}
+    \vspace{0.2em}
+    \subtext{\faChain \hspace{.5em} #4}
+    \vspace{0.2em}
+    % \subtext{\faCalendar \hspace{.5em} #3 }
+    % \hfill \faChain \hspace{.5em} #5}
     
+    \par%
 
 }
 \newcommand{\publicationSmall}[5]{%
@@ -753,8 +918,6 @@
 % lists
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
 \RequirePackage[inline]{enumitem}
 \setlength{\tabcolsep}{0in}
 \setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.5em \small}
@@ -764,7 +927,6 @@
         \textbf{#1}:    {#2}
         }
 }
-
 
 %\setlist[itemize]{align=parleft,left=0pt..1em}
 \newenvironment{zitemize}{
@@ -787,7 +949,6 @@
 \pagestyle{headerhighlightmain}
 \RequirePackage{hyperref}
 \hypersetup{colorlinks=true,urlcolor=link-color}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  THE END
