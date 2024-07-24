@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  23 JUL 2024 17:15
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  24 JUL 2024 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -977,13 +977,13 @@ File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 LaTeX Font Info:    Font shape `TU/Carlito(0)/m/sl' in size <10.95> not availab
 le
 (Font)              Font shape `TU/Carlito(0)/m/it' tried instead on input line
- 94.
+ 97.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 94.
+(Font)              <10.95> on input line 97.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 94.
+(Font)              <8> on input line 97.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 94.
+(Font)              <6> on input line 97.
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 22.00473pt needed,
@@ -993,7 +993,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=22.00473pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 9
-4.
+7.
 
 
 Overfull \vbox (22.00473pt too high) has occurred while \output is active []
@@ -1008,7 +1008,7 @@ Package scrlayer-scrpage Warning: \footheight to low.
 (scrlayer-scrpage)                e.g., using
 (scrlayer-scrpage)                  \setlength{\footheight}{22.00473pt}
 (scrlayer-scrpage)                in your preamble.
-(scrlayer-scrpage)                I'll also increase \footskip on input line 94
+(scrlayer-scrpage)                I'll also increase \footskip on input line 97
 .
 
 [1
@@ -1020,7 +1020,7 @@ Package rerunfilecheck Info: File `cover-letter.out' has not changed.
 Here is how much of TeX's memory you used:
  31970 strings out of 476191
  708748 string characters out of 5812072
- 1209009 words of memory out of 5000000
+ 1206009 words of memory out of 5000000
  52252 multiletter control sequences out of 15000+600000
  475564 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
