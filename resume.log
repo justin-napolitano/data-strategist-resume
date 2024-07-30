@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  26 JUL 2024 09:25
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  30 JUL 2024 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1000,8 +1000,31 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 \BKM@id=\count328
 ))
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.35 \alignedheadertest[circle]{left}
+                                     
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.35 \alignedheadertest[circle]{left}
+                                     
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.35 \alignedheadertest[circle]{left}
+                                     
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.35 \alignedheadertest[circle]{left}
+                                     
+? 
 LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 35.
-
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.5> not available
 (Font)              size <10.95> substituted on input line 35.
@@ -1020,10 +1043,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
 (Font)              size <10.95> substituted on input line 35.
 
-File: head_shot.jpeg Graphic file (type bmp)
-<head_shot.jpeg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
@@ -1085,12 +1106,12 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32240 strings out of 476191
- 712861 string characters out of 5812072
- 1265019 words of memory out of 5000000
- 52526 multiletter control sequences out of 15000+600000
+ 32187 strings out of 476191
+ 711562 string characters out of 5812072
+ 1264019 words of memory out of 5000000
+ 52476 multiletter control sequences out of 15000+600000
  473773 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 125i,15n,120p,10602b,810s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 125i,15n,120p,10602b,812s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).
