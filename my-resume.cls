@@ -689,12 +689,12 @@
     \vspace{1.0em}
 }
 
-\newcommand{\justinpublication}[5]{
+\newcommand{\justinpublication}[3]{
     \subsection{{#1}}
     \vspace{0.1em}
-    \subtext{\faBook \hspace{.5em} #4}
+    % \subtext{\faBook \hspace{.5em} #4}
     \subtext{\faGroup \hspace{.5em} #2}
-    \subtext{\faCalendar \hspace{.5em} #3 \hfill \faChain \hspace{.5em} #5}
+    \subtext{\faCalendar \hspace{.5em} #3 \hfill \faChain}
 %    \subtext{#5}
     
 

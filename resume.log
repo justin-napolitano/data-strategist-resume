@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  30 JUL 2024 12:17
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  31 JUL 2024 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1028,33 +1028,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--35
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
 [][]  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 2735) in paragraph at lines 263--263
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
-[][]  []  []
+Underfull \hbox (badness 1953) in paragraph at lines 263--263
+[]  []
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 263--263
+[][]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[]  []
  []
 
 
 LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 229.
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 263.
 
 [1
 
@@ -1072,7 +1082,7 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  32238 strings out of 476191
  712809 string characters out of 5812072
- 1256019 words of memory out of 5000000
+ 1257995 words of memory out of 5000000
  52524 multiletter control sequences out of 15000+600000
  473773 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

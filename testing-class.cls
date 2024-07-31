@@ -848,7 +848,7 @@
     \vspace{1.0em}
 }
 
-\newcommand{\justinpublication}[4]{
+\newcommand{\justinpublication}[3]{
     \subsection{{#1}}
     \vspace{0.2em}
     \par%
@@ -856,8 +856,8 @@
     \vspace{0.2em}
     \subtext{\faGroup \hspace{.5em} #2}
     \vspace{0.2em}
-    \subtext{\faChain \hspace{.5em} #4}
-    \vspace{0.2em}
+    % \subtext{\faChain \hspace{.5em} #4}
+    % \vspace{0.2em}
     % \subtext{\faCalendar \hspace{.5em} #3 }
     % \hfill \faChain \hspace{.5em} #5}
     
