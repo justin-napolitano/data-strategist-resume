@@ -105,6 +105,7 @@
 \definecolor{awesome-emerald}{HTML}{00A388}
 \definecolor{awesome-skyblue}{HTML}{0395DE}
 \definecolor{awesome-red}{HTML}{DC3522}
+\definecolor{awesome-green}{HTML}{49796B}
 \definecolor{awesome-pink}{HTML}{EF4089}
 \definecolor{awesome-orange}{HTML}{FF6138}
 \definecolor{awesome-nephritis}{HTML}{27AE60}
@@ -536,7 +537,7 @@
 % redefine subsection as bold
 \renewcommand{\subsection}[1]{%
   \smallskip%
-  {\color{emphasis}\footnotesize\bfseries{#1}\par} \smallskip
+  {\color{emphasis}\small\bfseries{#1}\par} \smallskip
 }
 
 % format job/school list
@@ -690,11 +691,15 @@
     \textcolor{emphasis}{\textbf{#2}}
     }
 \newcommand{\skill}[2]{%
+    {\small % Reduces the font size
     \textcolor{emphasis}{{#1}}\hfill
     \foreach \x in {1,...,5}{%
-      \space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\faCircle}}\par%
+      \space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\scalebox{0.8}{\faCircle}}}\par% Adjust the scaling factor as needed
     \vspace{0.2em}% Adjust the vertical space here
+    }
 }
+
+
 
 % skill without any charts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -707,7 +712,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\skillsection}[1]{%
-    \textit{\color{accent}#1}\par
+    {\small\textit{\color{accent}#1}}\par
 }
 
 % tag (framed word or phrase)
@@ -929,8 +934,8 @@
         }
 }
 
-%\setlist[itemize]{align=parleft,left=0pt..1em}
 \newenvironment{zitemize}{
+    \small % Reduces the font size
     \raggedright % Prevents hyphenation
     \vspace{-.3em}
     \begin{itemize} 
