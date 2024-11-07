@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  26 JUL 2024 09:25
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  7 NOV 2024 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1020,8 +1020,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
 (Font)              size <10.95> substituted on input line 35.
 
-File: head_shot.jpeg Graphic file (type bmp)
-<head_shot.jpeg>
+File: headshot_best.jpeg Graphic file (type bmp)
+<headshot_best.jpeg>
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--35
 
@@ -1086,7 +1086,7 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  32240 strings out of 476191
- 712861 string characters out of 5812072
+ 712893 string characters out of 5812072
  1265019 words of memory out of 5000000
  52526 multiletter control sequences out of 15000+600000
  473773 words of font info for 64 fonts, out of 8000000 for 9000
