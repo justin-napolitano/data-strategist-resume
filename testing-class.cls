@@ -110,6 +110,7 @@
 \definecolor{awesome-nephritis}{HTML}{27AE60}
 \definecolor{awesome-concrete}{HTML}{95A5A6}
 \definecolor{awesome-darknight}{HTML}{131A28}
+\definecolor{light-red}{HTML}{F17E68}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % COLORED BARS
@@ -528,14 +529,14 @@
     % \bigskip%
     % \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr 1pt-\baselineskip}\raggedright\input{#1}}}%
     \ifstrequal{#1}{}{}{\makebox[5mm][c]{#1}\hspace{0.5em}}
-    {\color{heading}\normalsize\bfseries\MakeUppercase{#2}}\\[-1ex]%
+    {\color{heading}\small\bfseries\MakeUppercase{#2}}\\[-1ex]%
     {\color{heading}\rule{\linewidth}{1.0pt}\par}
 }
 
 % redefine subsection as bold
 \renewcommand{\subsection}[1]{%
   \smallskip%
-  {\color{emphasis}\small\bfseries{#1}\par} \smallskip
+  {\color{emphasis}\footnotesize\bfseries{#1}\par} \smallskip
 }
 
 % format job/school list
