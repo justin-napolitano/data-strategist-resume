@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  7 NOV 2024 15:22
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.22)  8 NOV 2024 12:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1003,59 +1003,59 @@ File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 ! Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.38 \alignedheadertest[circle]{left}
+l.39 \alignedheadertest[circle]{left}
                                      
 ? 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.38 \alignedheadertest[circle]{left}
+l.39 \alignedheadertest[circle]{left}
                                      
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.38 \alignedheadertest[circle]{left}
+l.39 \alignedheadertest[circle]{left}
                                      
 ? 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.38 \alignedheadertest[circle]{left}
+l.39 \alignedheadertest[circle]{left}
                                      
 ? 
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 38.
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 39.
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 38.
+(Font)              size <10.95> substituted on input line 39.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 38.
+(Font)              size <10.95> substituted on input line 39.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.5> on input line 38.
+(Font)              <10.5> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.34996> on input line 38.
+(Font)              <7.34996> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.25> on input line 38.
+(Font)              <5.25> on input line 39.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 38.
+(Font)              size <10.95> substituted on input line 39.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 
  []
 
 
 LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 278.
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 280.
 
 [1
 
@@ -1071,12 +1071,12 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32140 strings out of 476191
- 710462 string characters out of 5812072
- 1265161 words of memory out of 5000000
- 52427 multiletter control sequences out of 15000+600000
- 473789 words of font info for 66 fonts, out of 8000000 for 9000
+ 32142 strings out of 476191
+ 710542 string characters out of 5812072
+ 1266161 words of memory out of 5000000
+ 52428 multiletter control sequences out of 15000+600000
+ 473797 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 125i,15n,120p,10602b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 125i,15n,120p,10602b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).
