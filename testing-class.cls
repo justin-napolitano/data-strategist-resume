@@ -508,15 +508,50 @@
         }{% if double layout, the highlight bar alternates
             \Ifthispageodd{% if the page is odd, the highlight bar is on the left (as is for single layout)
                 \@highlightbar
-                \hspace{\dimexpr \marginleft+\marginright}%
+                \hspace{\dimexpr 1em +\marginleft+\marginright}%
                 \@mainbar
             }{%  if the page is even, the highlight bar is on the right
                 \@mainbar
-                \hspace{\dimexpr \marginleft+\marginright}%
+                \hspace{\dimexpr 1em \marginleft+\marginright}%
                 \@highlightbar
             }   
         }
 }
+
+% \newcommand{\makebody}{%
+%     \ifthenelse{\boolean{@singleordouble}}
+%         {% Single layout logic: highlight bar on the left
+%             \begin{minipage}[t]{\highlightwidth}
+%                 \@highlightbar
+%             \end{minipage}%
+%             \hspace{0.75cm}% Adjust spacing as needed
+%             \begin{minipage}[t]{\dimexpr \textwidth - \highlightwidth}
+%                 % \raggedright
+%                 \@mainbar
+%             \end{minipage}
+%         }
+%         {% Double layout logic: highlight bar alternates
+%             \Ifthispageodd{% Odd pages: highlight bar on the left
+%                 \begin{minipage}[t]{\highlightwidth}
+%                     \@highlightbar
+%                 \end{minipage}%
+%                 \hspace{\dimexpr \marginleft + \marginright}%
+%                 \begin{minipage}[t]{\dimexpr \textwidth - \highlightwidth}
+%                     % \raggedright
+%                     \@mainbar
+%                 \end{minipage}
+%             }{% Even pages: highlight bar on the right
+%                 \begin{minipage}[t]{\dimexpr \textwidth - \highlightwidth}
+%                     % \raggedleft
+%                     \@mainbar
+%                 \end{minipage}%
+%                 \hspace{\dimexpr \marginleft + \marginright}%
+%                 \begin{minipage}[t]{\highlightwidth}
+%                     \@highlightbar
+%                 \end{minipage}
+%             }
+%         }
+% }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SECTIONS, SUBSECTIONS, AND MORE
