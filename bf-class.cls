@@ -964,7 +964,7 @@
 
 \RequirePackage[inline]{enumitem}
 \setlength{\tabcolsep}{0in}
-\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.5em \small}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=0.2em, label={} \small}
 %%% Bold Faced Item list
 \newcommand{\skilling}[2]{
     \item{
@@ -977,7 +977,7 @@
     \raggedright % Prevents hyphenation
     \vspace{-.3em}
     \begin{itemize} 
-        \itemsep 0.5em % Adjust the space between items here
+        \itemsep 0.3em % Adjust the space between items here
         \parskip 0pt 
         \parsep 0pt
     }
@@ -986,6 +986,20 @@
         \vspace{0.5em} % Adjust the space after the list here
     }
 
+\newenvironment{bitemize}{
+    \small % Reduces the font size (if desired)
+    \raggedright % Prevents hyphenation
+    \vspace{-.3em}
+    \begin{itemize}[label=\textbullet, leftmargin=1.5em] % Sets the bullet to a bullet point symbol
+        \itemsep 0.3em % Adjust the space between items here
+        \parskip 0pt 
+        \parsep 0pt
+    }
+    {
+        \end{itemize}
+        \vspace{0.5em} % Adjust the space after the list here
+    }
+    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FINAL FORMATTING
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
