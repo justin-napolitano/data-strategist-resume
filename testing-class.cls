@@ -41,7 +41,7 @@
 \RequirePackage[skins]{tcolorbox}       % somehow required for tikz to work at all
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
-\RequirePackage{fontawesome}
+\RequirePackage{fontawesome5}
 \RequirePackage{academicons}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -853,7 +853,7 @@
     {\normalsize \color{emphasis}#1\par}
     \vspace{0.1em}%
     \begin{minipage}[t]{3mm}%
-        \makebox[3mm][c]{\footnotesize \faGroup}
+        \makebox[3mm][c]{\footnotesize \faUsers}
     \end{minipage}%
     \hspace{0.5em}%
     \begin{minipage}[t]{\dimexpr \linewidth-3mm-0.5em}%
@@ -885,7 +885,7 @@
     \hspace{1.0em}
     \begin{minipage}[t]{\publinklength}%
         \ifstrequal{#5}{}{}{%
-            \footnotesize \makebox[3mm][c]{\faChain} \hspace{0.25em} #5\par
+            \footnotesize \makebox[3mm][c]{\faLink} \hspace{0.25em} #5\par
         }%
     \end{minipage}%
     \par\normalsize
@@ -898,9 +898,9 @@
     \par%
     \subtext{\faBook \hspace{.5em} #3}
     \vspace{0.2em}
-    \subtext{\faGroup \hspace{.5em} #2}
+    \subtext{\faUsers \hspace{.5em} #2}
     \vspace{0.2em}
-    \subtext{\faChain \hspace{.5em} #4}
+    \subtext{\faLink \hspace{.5em} #4}
     \vspace{0.2em}
     % \subtext{\faCalendar \hspace{.5em} #3 }
     % \hfill \faChain \hspace{.5em} #5}
@@ -912,7 +912,7 @@
     {\normalsize \color{emphasis}#1\par}
     \vspace{0.1em}%
     \begin{minipage}[t]{3mm}%
-        \makebox[3mm][c]{\footnotesize \faGroup}
+        \makebox[3mm][c]{\footnotesize \faUsers}
     \end{minipage}%
     \hspace{0.5em}%
     \normalsize #2
@@ -929,7 +929,7 @@
     \par \vspace{0.25em}
     \begin{minipage}[t]{\pubjournallength}%
         \ifstrequal{#5}{}{}{%
-        \footnotesize \makebox[3mm][c]{\faChain} \hspace{0.25em} #5
+        \footnotesize \makebox[3mm][c]{\faLink} \hspace{0.25em} #5
     \end{minipage}%
     \hfill
     \begin{minipage}[t]{-1em}%
