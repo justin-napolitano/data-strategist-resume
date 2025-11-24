@@ -1,12 +1,26 @@
 ---
-slug: "github-data-strategist-resume"
-title: "data-strategist-resume"
-repo: "justin-napolitano/data-strategist-resume"
-githubUrl: "https://github.com/justin-napolitano/data-strategist-resume"
-generatedAt: "2025-11-23T08:51:19.786624Z"
-source: "github-auto"
+slug: github-data-strategist-resume
+title: LaTeX Classes for Reproducible Data Strategist Resumes and Cover Letters
+repo: justin-napolitano/data-strategist-resume
+githubUrl: https://github.com/justin-napolitano/data-strategist-resume
+generatedAt: '2025-11-23T08:51:19.786624Z'
+source: github-auto
+summary: >-
+  Technical overview of custom LaTeX classes for professional, version-controlled resume and cover
+  letter creation with precise layout control.
+tags:
+  - latex
+  - resume
+  - cover-letter
+  - document-formatting
+seoPrimaryKeyword: LaTeX resume classes
+seoSecondaryKeywords:
+  - data strategist resume
+  - document formatting
+  - version control
+  - pdf generation
+seoOptimized: true
 ---
-
 
 # Technical Overview of data-strategist-resume
 
