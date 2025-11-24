@@ -20,6 +20,13 @@ seoSecondaryKeywords:
   - version control
   - pdf generation
 seoOptimized: true
+topicFamily: latex
+topicFamilyConfidence: 1
+topicFamilyNotes: >-
+  The post is a detailed technical overview of custom LaTeX classes for professional resumes and
+  cover letters, which directly matches the 'Latex' family's description and example slugs such as
+  'github-data-strategist-resume'. The content focuses on LaTeX document class development, build
+  process, and precise layout control, making 'latex' the most specific and appropriate family.
 ---
 
 # Technical Overview of data-strategist-resume
@@ -64,3 +71,4 @@ The presence of image files for headshots indicates support for personal brandin
 The `data-strategist-resume` repository exemplifies a technical approach to professional document creation using LaTeX. It balances customization, reproducibility, and typographic quality. The project is a useful reference for anyone looking to maintain professional documents as code, leveraging LaTeX's capabilities for precise control over layout and styling.
 
 Future improvements could include automation of the build process and expanded documentation to facilitate reuse and adaptation.
+
