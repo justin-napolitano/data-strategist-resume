@@ -1,32 +1,42 @@
 ---
 slug: github-data-strategist-resume
-title: LaTeX Classes for Reproducible Data Strategist Resumes and Cover Letters
+title: 'Creating Professional Resumes with LaTeX: A Technical Guide'
 repo: justin-napolitano/data-strategist-resume
 githubUrl: https://github.com/justin-napolitano/data-strategist-resume
 generatedAt: '2025-11-23T08:51:19.786624Z'
 source: github-auto
 summary: >-
-  Technical overview of custom LaTeX classes for professional, version-controlled resume and cover
-  letter creation with precise layout control.
+  Explore a LaTeX-based approach to building customizable and version-controlled
+  resumes and cover letters.
 tags:
   - latex
   - resume
   - cover-letter
   - document-formatting
-seoPrimaryKeyword: LaTeX resume classes
-seoSecondaryKeywords:
-  - data strategist resume
-  - document formatting
+  - cover letter
+  - pdflatex
+  - tikz
+  - tcolorbox
   - version control
-  - pdf generation
+seoPrimaryKeyword: latex resume creation
+seoSecondaryKeywords:
+  - custom resume templates
+  - professional document typesetting
+  - version-controlled documents
+  - LaTeX classes
+  - resume formatting
 seoOptimized: true
 topicFamily: latex
 topicFamilyConfidence: 1
 topicFamilyNotes: >-
-  The post is a detailed technical overview of custom LaTeX classes for professional resumes and
-  cover letters, which directly matches the 'Latex' family's description and example slugs such as
-  'github-data-strategist-resume'. The content focuses on LaTeX document class development, build
-  process, and precise layout control, making 'latex' the most specific and appropriate family.
+  The post is a detailed technical overview of custom LaTeX classes for
+  professional resumes and cover letters, which directly matches the 'Latex'
+  family's description and example slugs such as
+  'github-data-strategist-resume'. The content focuses on LaTeX document class
+  development, build process, and precise layout control, making 'latex' the
+  most specific and appropriate family.
+kind: project
+id: github-data-strategist-resume
 ---
 
 # Technical Overview of data-strategist-resume
