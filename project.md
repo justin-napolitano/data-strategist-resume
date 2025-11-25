@@ -7,8 +7,8 @@ githubUrl: https://github.com/justin-napolitano/data-strategist-resume
 generatedAt: '2025-11-24T21:34:32.303Z'
 source: github-auto
 summary: >-
-  A LaTeX-based project for creating professional resumes and cover letters with
-  custom classes and advanced features.
+  A LaTeX-based project for creating professional resumes and cover letters with custom classes and
+  advanced features.
 tags:
   - latex
   - resume
@@ -25,8 +25,8 @@ seoSecondaryKeywords:
   - tikz graphics in latex
   - latex document formatting
 seoOptimized: true
-topicFamily: null
-topicFamilyConfidence: null
+topicFamily: latex
+topicFamilyConfidence: 0.9
 kind: project
 entryLayout: project
 showInProjects: true
@@ -93,3 +93,4 @@ Repeat compilation if necessary to resolve references.
 ---
 
 *Note: This README is based on available files and inferred project purpose.*
+
