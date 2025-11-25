@@ -1,20 +1,30 @@
 ---
 slug: github-data-strategist-resume
 id: github-data-strategist-resume
-title: data-strategist-resume
+title: LaTeX Resume Builder with Custom Document Classes
 repo: justin-napolitano/data-strategist-resume
 githubUrl: https://github.com/justin-napolitano/data-strategist-resume
 generatedAt: '2025-11-24T21:34:32.303Z'
 source: github-auto
 summary: >-
-  A LaTeX-based repository containing custom document classes and source files
-  for creating professional resumes and cover letters. This project leverages
-  tailored LaTeX classes to generate consistent, high-quality PDF outputs for
-  resumes and related documents.
-tags: []
-seoPrimaryKeyword: ''
-seoSecondaryKeywords: []
-seoOptimized: false
+  A LaTeX repository for creating professional resumes and cover letters with
+  custom classes and advanced formatting options.
+tags:
+  - latex
+  - resume
+  - cover-letter
+  - tikz
+  - tcolorbox
+  - fontawesome
+  - academicons
+seoPrimaryKeyword: latex resume builder
+seoSecondaryKeywords:
+  - custom latex classes
+  - resume formatting
+  - pdf resume generation
+  - professional documents
+  - latex project structure
+seoOptimized: true
 topicFamily: null
 topicFamilyConfidence: null
 kind: project
