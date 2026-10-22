@@ -1,5 +1,5 @@
-% \documentclass[doublesided, paper=a4, fontsize=10.5pt]{my-resume}
-\documentclass[singlesided, paper=a4, fontsize=10.5pt]{testing-class}
+% \documentclass[doublesided, paper=a4, fontsize=10pt]{my-resume}
+\documentclass[singlesided, paper=a4, fontsize=10pt]{testing-class}
 
 % Set geometry
 \setlength\highlightwidth{8cm}
@@ -11,18 +11,24 @@
 
 % Fonts
 \RequirePackage{fontspec}
-\setmainfont{Carlito}
+% Existing TeX Live fonts are selected by file name for reproducible builds.
+\setmainfont{texgyreheros-regular.otf}[BoldFont=texgyreheros-bold.otf,ItalicFont=texgyreheros-italic.otf,BoldItalicFont=texgyreheros-bolditalic.otf]
+\renewfontfamily\resumenamefont{texgyrepagella-regular.otf}
 
-% Colors
+% Approved Index / Simplified print palette. White paper avoids excess ink.
+\definecolor{sitebackground}{HTML}{F4F0E8}
+\definecolor{siteink}{HTML}{25251F}
+\definecolor{siteaccent}{HTML}{4F6073}
+\definecolor{sitestone}{HTML}{CBC8BF}
 \colorlet{highlightbarcolor}{white}
 \colorlet{headerbarcolor}{white}
-\colorlet{headerfontcolor}{black}
-\colorlet{accent}{awesome-emerald}
-\colorlet{heading}{black}
-\colorlet{emphasis}{black}
-\colorlet{body}{black}
-\colorlet{link-color}{black}
-\colorlet{key}{light-red}
+\colorlet{headerfontcolor}{siteink}
+\colorlet{accent}{siteaccent}
+\colorlet{heading}{siteink}
+\colorlet{emphasis}{siteink}
+\colorlet{body}{siteink}
+\colorlet{link-color}{siteink}
+\colorlet{key}{siteink}
 
 \begin{document}
 
@@ -52,7 +58,7 @@
     \vspace{0.5cm}
     \section{Qualifications}
     \vspace{0.5em}
-    \makebox[\textwidth][l]{\scriptsize \textit{\textcolor{awesome-green}{ 1 dot = 1 year of experience}}}
+    \makebox[\textwidth][l]{\scriptsize \textit{\textcolor{siteink}{ 1 dot = 1 year of experience}}}
 
     \vspace{0.5em}
     \skillsection{Lakehouses}
