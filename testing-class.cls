@@ -232,9 +232,10 @@
 \setlength\@namelineheight{1\@namefontheight}
 
 % Define a new header to center the name at the top of the page
+\providecommand{\resumenamefont}{\rmfamily}
 \newcommand{\centeredheader}{%
     \begin{center}
-        {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+        {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
         \ifdefined\@tagline
             \vspace{0.5em}
             {\large\color{headerfontcolor}\@tagline\par}
@@ -246,7 +247,7 @@
 \newcommand{\alignedheader}[1]{%
     \ifthenelse{\equal{#1}{center}}{%
         \begin{center}
-            {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+            {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
             \ifdefined\@tagline
                 \vspace{0.5em}
                 {\large\color{headerfontcolor}\@tagline\par}
@@ -255,7 +256,7 @@
     }{%
         \ifthenelse{\equal{#1}{left}}{%
             \begin{flushleft}
-                {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
                 \ifdefined\@tagline
                     \vspace{0.5em}
                     {\large\color{headerfontcolor}\@tagline\par}
@@ -263,7 +264,7 @@
             \end{flushleft}
         }{%
             \begin{flushright}
-                {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
                 \ifdefined\@tagline
                     \vspace{0.5em}
                     {\large\color{headerfontcolor}\@tagline\par}
@@ -281,7 +282,7 @@
 \newcommand{\alignedheadertest}[2][]{%
     \ifthenelse{\equal{#2}{center}}{%
         \begin{center}
-            {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+            {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
             \ifdefined\@tagline
                 \vspace{0.5em}
                 {\large\color{headerfontcolor}\@tagline\par}
@@ -291,7 +292,7 @@
         \ifthenelse{\equal{#2}{left}}{%
             \begin{minipage}[c]{\dimexpr \textwidth - \ifdefined\@photo\@photodiameter + 0.5em\fi}
                 \begin{flushleft}
-                    {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                    {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
                     \ifdefined\@tagline
                         \vspace{0.5em}
                         {\large\color{headerfontcolor}\@tagline\par}
@@ -322,7 +323,7 @@
                 \fi
                 \begin{minipage}[c]{\dimexpr \textwidth - \ifdefined\@photo\@photodiameter + 0.5em\fi}
                     \begin{flushright}
-                        {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                        {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
                         \ifdefined\@tagline
                             \vspace{0.5em}
                             {\large\color{headerfontcolor}\@tagline\par}
@@ -362,7 +363,7 @@
                 }
                 \vspace{0.5em}
             \fi
-            {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+            {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
             \ifdefined\@tagline
                 \vspace{0.5em}
                 {\large\color{headerfontcolor}\@tagline\par}
@@ -379,7 +380,7 @@
                     }
                     \vspace{0.5em}
                 \fi
-                {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
                 \ifdefined\@tagline
                     \vspace{0.5em}
                     {\large\color{headerfontcolor}\@tagline\par}
@@ -395,7 +396,7 @@
                     }
                     \vspace{0.5em}
                 \fi
-                {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
                 \ifdefined\@tagline
                     \vspace{0.5em}
                     {\large\color{headerfontcolor}\@tagline\par}
@@ -423,7 +424,7 @@
             }{}
             % print the header text
                 \begin{minipage}[t][2em]{\linewidth}
-                    {\huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                    {\fontsize{20}{24}\selectfont\resumenamefont\color{headerfontcolor}\@name\par}
                 \end{minipage}%
                 \vfill%
                 \ifdefined\@tagline
@@ -564,9 +565,9 @@
 \renewcommand{\section}[2][]{%
     % \bigskip%
     % \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr 1pt-\baselineskip}\raggedright\input{#1}}}%
-    \ifstrequal{#1}{}{}{\makebox[5mm][c]{#1}\hspace{0.5em}}
-    {\color{heading}\small\bfseries\MakeUppercase{#2}}\\[-1ex]%
-    {\color{heading}\rule{\linewidth}{1.0pt}\par}
+    % Text-only headings; optional decorative marks intentionally omitted.
+    {\color{heading}\small\bfseries{#2}}\\[-1ex]%
+    {\color{heading}\rule{\linewidth}{0.4pt}\par}
 }
 
 % redefine subsection as bold
